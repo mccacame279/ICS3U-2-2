@@ -17,7 +17,7 @@ TEST_CASE("Exercise One", "[example]") //Named ExerciseOne, tagged with example
     //TODO: Set up tests
     CHECK(exerciseOne("agent")==10); 
     CHECK(exerciseOne("agents")==0);
-    REQUIRE(exerciseOne("AGENTs of oaks")==0);
+    REQUIRE(exerciseOne("AGENTs of saints")==0);
         
 }
 
@@ -39,7 +39,7 @@ TEST_CASE("Exercise Two")
     CHECK(result=="passed");
 
     //Checks if 49 is not a pass
-    result = exerciseTwo(50);
+    result = exerciseTwo(49);
     std::for_each(result.begin(),result.end(),[] (char & c){
     c= ::tolower(c);
     });
@@ -63,7 +63,7 @@ TEST_CASE("Exercise Three")
     CHECK(result=="buzz");
 
     //Checks if 105 is a fizzbuzz
-    result = exerciseThree(33);
+    result = exerciseThree(105);
     std::for_each(result.begin(),result.end(),[] (char & c){
     c= ::tolower(c);
     });
