@@ -29,7 +29,7 @@ string exerciseTwo(int mark) //takes in one mark
 	{
 		return "failed";
 	}
-}
+} 
 
 string exerciseThree(int number) //takes in one number
 {
