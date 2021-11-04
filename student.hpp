@@ -9,15 +9,46 @@ using namespace std;
 
 int exerciseOne(string word) //takes in one word
 {
-	return 15;// TODO: fix
+	if (word == "agent") 
+	{
+	  return 10;
+	}
+	else
+	{ 
+          return 0;
+	}
 }
 
 string exerciseTwo(int mark) //takes in one mark
 {
-	return "blarg";// TODO: fix. Returns a word
+	if (mark >= 50)
+	{
+	        return "passed";
+	}
+	else
+	{
+		return "failed";
+	}
 }
 
 string exerciseThree(int number) //takes in one number
 {
-	return "0";// TODO: fix. Returns a word, or a number in string format
+	string phrase = "";
+	if (number % 3 == 0 && number % 5 == 0)
+	{
+		phrase += "fizzbuzz";
+	}
+	else if (number % 3 == 0)
+	{
+		phrase += "fizz";
+	}
+	else if (number % 5 == 0)
+	{
+		phrase += "buzz";
+	}
+	else
+	{
+		phrase = to_string(number);
+	}
+	return phrase;
 }
